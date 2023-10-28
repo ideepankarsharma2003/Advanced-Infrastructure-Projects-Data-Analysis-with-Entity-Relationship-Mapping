@@ -3,6 +3,8 @@
 ## Electric Power Consumption (kWh per capita)
 #### `Dataset`: [Electric power consumption (kWh per capita)](https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC)
 
+<br><br>
+![Alt text](assets/img/image-5.png)
 
 
 #### Workflows
@@ -11,6 +13,8 @@
 2. Extracting the Entities from the Metadata using Language Model `Babelscape/rebel-large`
 3. The code walkthrough is in the research folder.
 4. The extracted entities and the defined SVO triplets are in the Entities Library.
+5. Populating the `Neo4j` graph database with the extracted svo triplets.
+6. Embeddings are not added because some of the extracted entities are not in the Wikidata or DBpedia Open Knowledge base.
 
 `Note`: Spacy is used for the NER of the extracted entities. However given more resources this could be done using custom finetuned NER model.
 
@@ -32,19 +36,19 @@ MATCH (n) DETACH DELETE n;
 
 ## Graph Demo on Neo4j
 
-- Labelled entities
+#### - Labelled entities<br><br>
 ![Alt text](assets/img/image.png)
 
-- Extracted Relationships
+#### - Extracted Relationships<br><br>
 ![Alt text](assets/img/image-1.png)
 
-- In-Depth Relationships
+#### - In-Depth Relationships<br><br>
 ![Alt text](assets/img/image-2.png)
 
 
 
 
-#### Director Guide
+#### Directory Guide
 
 - [Code Walkthrough](research/)
 - [Entity Extraction using Language Model](research/02_creatingSVO_triples.ipynb)
