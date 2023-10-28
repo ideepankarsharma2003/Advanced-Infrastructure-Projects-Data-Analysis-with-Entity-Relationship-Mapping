@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://sam.gov/
+HostUrl=https://iae-prd-fpds-reporting.s3.amazonaws.com/Top_100_Contractors_Report_Fiscal_Year_2022.xlsx?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231028T040120Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=AKIAY3LPYEEX2HT7FNNV%2F20231028%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=6cef47391f4ccdef97a43a0beb18d6d86bf6ccb986f4fa7eb2731cc964cbe0fb
