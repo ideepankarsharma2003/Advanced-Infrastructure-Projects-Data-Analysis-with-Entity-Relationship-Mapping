@@ -2,7 +2,7 @@
 
 ## Electric Power Consumption (kWh per capita)
 
-## Data Sources
+#### Data Sources
 
 ● World Bank Projects<br>
 ● SAM.gov tenders<br>
@@ -10,10 +10,20 @@
 
 `Dataset`: [Electric power consumption (kWh per capita)](https://data.worldbank.org/indicator/EG.USE.ELEC.KH.PC)
 
-## Workflows
+#### Workflows
 
 1. Extracting the Entities from the Dataset using tabular data.
 2. Extracting the Entities from the Metadata using Language Model `Babelscape/rebel-large`
+3. The code walkthrough is in the research folder.
+4. The extracted entities and the defined SVO triplets are in the Entities Library.
+
+`Note`: Spacy is used for the NER of the extracted entities. However given more resources this could be done using custom finetuned NER model.
+
+
+
+
+
+
 
 
 <!-- 1. Update config.yaml
